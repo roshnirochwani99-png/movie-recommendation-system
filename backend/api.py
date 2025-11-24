@@ -6,7 +6,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 # ---------- BUILD MODEL ON STARTUP ----------
 
-movies = pd.read_csv("data/movies.csv")
+movies = pd.read_csv("backend/data/movies.csv")
 movies['genres'] = movies['genres'].fillna('')
 movies['content'] = movies['title'] + " " + movies['genres']
 
